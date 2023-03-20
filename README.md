@@ -22,6 +22,8 @@ int, maximum length of all sequences
 type of the output sequences
 - padding 'pre' or 'post', pad either before or after each sequence.
 
+### Few Points about the Model
+
 - sequence() a plain stack of layers where each layer has exactly one input tensor and one output tensor 
 - create a Sequential model incrementally via the add() method  the input of the LSTM is always a 3D array (batch_size, time_steps, units)  
 - The output of the LSTM could be a 2D array or 3D array depending upon the return_sequences argument. If return_sequence is False, the output is a 2D array. (batch_size, units) If return_sequence is True, the output is a 3D array. (batch_size, time_steps, units) in this case; the return_sequence is false - this is the default, therefore - 2D LSTM outpu
